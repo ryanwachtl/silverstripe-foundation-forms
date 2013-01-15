@@ -1,10 +1,10 @@
 {
-  "name":"ryanwachtl/foundataionforms",
-  "type": "silverstripe-module",
+	"name": "ryanwachtl/foundationforms",
+	"type": "silverstripe-module",
 	"description": "SilverStripe 3 Forms Compatible with Zurb Foundation Framework",
 	"keywords": ["silverstripe", "forms", "zurbfoundation"],
 	"license": "MIT Open Source License",
-	"authors":[
+	"authors": [
 		{
 			"name": "Ryan Wachtl",
 			"homepage": "http://ryanwachtl.com"
