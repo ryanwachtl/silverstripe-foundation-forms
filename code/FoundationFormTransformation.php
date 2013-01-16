@@ -8,10 +8,10 @@ class FoundationFormTransformation {
 	
 	protected static $template = "FoundationForm";
 	
-	public function transform(Form $form) {
+	public static function transform(Form $form) {
 		self::applyFoundation($form);
 		$form->addExtraClass('custom');
-		$form->setTemplate($template);
+		$form->setTemplate(self::$template);
 	}
 	
 	/**
@@ -35,7 +35,7 @@ class FoundationFormTransformation {
 				self::apply_foundation_to_fieldlist($field->Fields());
 			}
 			
-			$template = "Foundation{$f->class}_holder";
+			$template = "Foundation{$field->class}_holder";
 			
 			if(SSViewer::hasTemplate($template)) {
 				$field->setFieldHolderTemplate($template);
@@ -65,7 +65,7 @@ class FoundationFormTransformation {
 	 * Applies the Foundation transformation to the fields and actions
 	 * of the form
 	 */
-	public function applyFoundation(Form $form) {
+	public static function applyFoundation(Form $form) {
 		self::applyFoundationToFieldList($form->Fields());
 		self::applyFoundationToFieldList($form->Actions());
 	}
@@ -79,7 +79,7 @@ class FoundationFormTransformation {
 	 *
 	 * @param FieldList $fields
 	 */
-	protected function applyFoundationToFieldList(FieldList $fields) {
+	protected static function applyFoundationToFieldList(FieldList $fields) {
 		self::apply_foundation_to_fieldlist($fields);
 	}
 
