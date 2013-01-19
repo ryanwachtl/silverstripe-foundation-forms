@@ -1,5 +1,5 @@
 {
-	"name": "ryanwachtl/foundationforms",
+	"name": "silverstripe/foundationforms",
 	"type": "silverstripe-module",
 	"description": "SilverStripe 3 Forms Compatible with Zurb Foundation Framework",
 	"keywords": ["silverstripe", "forms", "zurbfoundation"],
