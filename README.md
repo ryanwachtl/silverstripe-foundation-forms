@@ -10,6 +10,11 @@ clone into your SilverStripe `root` directory
 
 `git clone https://github.com/ryanwachtl/silverstripe-foundation-forms.git foundation_forms`
 
+Installing
+=================================
+
+`composer require rywa/foundation_forms dev-master`
+
 Requirements
 =================================
 
