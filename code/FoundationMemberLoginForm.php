@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Builds a form that renders {@link FormField} objects
  * using templates that are compatible with Zurb Foundation.
@@ -7,20 +6,28 @@
  * objects and their subclasses to support special features
  * of the framework.
  *
- * @author Ryan Wachtl <ryan.wachtl@gmail.com>
+ * @author Ryan Wachtl <ryan@wachtl.us>
  * @package foundation_forms
  */
 class FoundationMemberLoginForm extends MemberLoginForm {
-
-	/**
-	 * Includes the dependency if necessary, applies the Foundation templates,
-	 * and renders the form HTML output
-	 *
-	 * @return string
-	 */
-	public function forTemplate() {
-		FoundationFormTransformation::transform($this);
-		return parent::forTemplate();
-	}
-
+    
+    /**
+     * @var string The template that will render this form
+     */
+    protected $template = "FoundationForm";
+    
+    /**
+     * Includes the dependency if necessary, applies the Bootstrap templates,
+     * and renders the form HTML output
+     *
+     * @return string
+     */
+    public function forTemplate()
+    {
+        $this->transform(new FoundationFormTransformation());
+        $this->addExtraClass('custom');
+        
+        return parent::forTemplate();
+    }
+    
 }
