@@ -15,7 +15,7 @@ clone into your SilverStripe `root` directory
 Installing
 =================================
 
-`composer require rywa/foundation_forms dev-master`
+`composer require rywa/silverstripe-foundation-forms dev-master`
 
 Requirements
 =================================
