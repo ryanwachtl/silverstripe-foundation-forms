@@ -13,7 +13,7 @@ if(FOUNDATION_FORM_DIR != "foundationforms") {
 }
 
 if(!class_exists("GridField")) {
-	user_error("The foundation_forms module requires SilverStripe 3.0 or greater.", E_USER_ERROR);
+	user_error("The foundation-forms module requires SilverStripe 3.0 or greater.", E_USER_ERROR);
 }
 
 // TODO Opt-in Use

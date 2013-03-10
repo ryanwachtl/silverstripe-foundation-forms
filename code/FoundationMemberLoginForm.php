@@ -10,24 +10,24 @@
  * @package foundation_forms
  */
 class FoundationMemberLoginForm extends MemberLoginForm {
-    
-    /**
-     * @var string The template that will render this form
-     */
-    protected $template = "FoundationForm";
-    
-    /**
-     * Includes the dependency if necessary, applies the Bootstrap templates,
-     * and renders the form HTML output
-     *
-     * @return string
-     */
-    public function forTemplate()
-    {
-        $this->transform(new FoundationFormTransformation());
-        $this->addExtraClass('custom');
-        
-        return parent::forTemplate();
-    }
-    
+	
+	/**
+	 * @var string The template that will render this form
+	 */
+	protected $template = "FoundationForm";
+	
+	/**
+	 * Includes the dependency if necessary, applies the Bootstrap templates,
+	 * and renders the form HTML output
+	 *
+	 * @return string
+	 */
+	public function forTemplate()
+	{
+		$this->transform(new FoundationFormTransformation());
+		$this->addExtraClass('custom');
+		
+		return parent::forTemplate();
+	}
+	
 }

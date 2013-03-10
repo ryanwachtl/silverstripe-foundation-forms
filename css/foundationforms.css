@@ -1,0 +1,33 @@
+.field.holder-bad input,
+.field.holder-bad textarea,
+.field.holder-bad input:focus,
+.field.holder-bad textarea:focus { 
+	border-color: #c60f13;
+	background-color: rgba(198, 15, 19, 0.1);
+}
+
+.field.holder-bad input:focus,
+.field.holder-bad textarea:focus { 
+	outline-color: #f5797c;
+}
+
+.field.holder-bad label {
+	color: #c60f13;
+}
+
+.field.holder-bad span.message.bad { 
+	display: block;
+	padding: 6px 4px;
+	margin-top: -13px;
+	margin-bottom: 12px;
+	background: #c60f13;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	-moz-border-radius-bottomleft: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
