@@ -8,14 +8,6 @@ $dir = basename(dirname(__FILE__));
 
 define('FOUNDATION_FORM_DIR', $dir);
 
-if(FOUNDATION_FORM_DIR != "foundationforms") {
-	user_error("The foundationforms module must be in a directory named 'foundationforms'",E_USER_ERROR);
-}
-
-if(!class_exists("GridField")) {
-	user_error("The foundation-forms module requires SilverStripe 3.0 or greater.", E_USER_ERROR);
-}
-
 // TODO Opt-in Use
 Object::useCustomClass('MemberLoginForm', 'FoundationMemberLoginForm');
 
