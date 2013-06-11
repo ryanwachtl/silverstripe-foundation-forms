@@ -10,7 +10,7 @@ Installing
 
 clone into your SilverStripe `root` directory
 
-`git clone https://github.com/ryanwachtl/silverstripe-foundation-forms.git foundation_forms`
+`git clone https://github.com/ryanwachtl/silverstripe-foundation-forms.git foundationforms`
 
 Installing
 =================================
