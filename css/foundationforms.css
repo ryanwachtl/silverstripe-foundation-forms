@@ -15,7 +15,7 @@
 	color: #c60f13;
 }
 
-.field.holder-bad span.message.bad { 
+.field.holder-bad span.message.bad, .field label.required { 
 	display: block;
 	padding: 6px 4px;
 	margin-top: -13px;
