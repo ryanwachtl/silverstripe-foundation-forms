@@ -2,6 +2,6 @@
 	<% if Title %><label for="$ID">$Title</label><% end_if %>
 	$Field
 	<% if RightTitle %><label class="right" for="$ID">$RightTitle</label><% end_if %>
-	<% if Message %><span class="message $MessageType">$Message</span><% end_if %>
+	<% if Message %><small class="message error $MessageType">$Message</small><% end_if %>
 	<% if Description %><span class="description">$Description</span><% end_if %>
 </div>
