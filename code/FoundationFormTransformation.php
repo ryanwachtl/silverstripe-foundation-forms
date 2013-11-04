@@ -19,7 +19,12 @@ class FoundationFormTransformation extends FormTransformation {
 		if ($field instanceof Tab) {
 			$field->Fields()->transform(new FoundationFormTransformation());
 		}
-			
+		
+		// fieldgroup
+		if ($field instanceof FieldGroup) {
+			$field->FieldList()->transform(new FoundationFormTransformation());
+		}
+		
 		$template = "Foundation{$field->class}_holder";
 			
 		if (SSViewer::hasTemplate($template)) {
