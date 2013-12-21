@@ -1,1 +1,1 @@
-<input $getAttributesHTML('class') class="button" />
+<input $getAttributesHTML('class') class="button $extraClass" />
