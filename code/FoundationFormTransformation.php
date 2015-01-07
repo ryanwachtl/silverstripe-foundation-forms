@@ -25,6 +25,11 @@ class FoundationFormTransformation extends FormTransformation {
 			$field->FieldList()->transform(new FoundationFormTransformation());
 		}
 		
+		// compositefield
+		if ($field instanceof CompositeField) {
+			$field->FieldList()->transform(new FoundationFormTransformation());
+		}
+		
 		$template = "Foundation{$field->class}_holder";
 			
 		if (SSViewer::hasTemplate($template)) {

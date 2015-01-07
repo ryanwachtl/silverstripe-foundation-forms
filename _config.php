@@ -15,6 +15,10 @@ Object::useCustomClass('MemberLoginForm', 'FoundationMemberLoginForm');
 if (class_exists('UserDefinedForm')) {
 	Object::add_extension('UserDefinedForm_Controller', 'FoundationUserDefinedForm_Controller');
 }
+// TODO Opt-in Use
+if (class_exists('CommentingController')) {
+	Object::add_extension('CommentingController', 'FoundationCommentingController');
+}
 
 // TODO Decorate Fields
 //Object::add_extension("FormField", "FoundationFormField");
