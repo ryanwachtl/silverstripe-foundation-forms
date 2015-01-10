@@ -1,4 +1,9 @@
-.field.holder-bad input,
+
+input.holder-required {
+	margin-bottom: 0;
+}
+
+/*.field.holder-bad input,
 .field.holder-bad textarea,
 .field.holder-bad input:focus,
 .field.holder-bad textarea:focus { 
@@ -33,3 +38,8 @@
 	-webkit-border-bottom-right-radius: 2px;
 	border-bottom-right-radius: 2px;
 }
+
+.holder-required .input {
+
+}
+*/

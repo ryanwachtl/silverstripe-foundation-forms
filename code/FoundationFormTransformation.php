@@ -10,14 +10,14 @@ class FoundationFormTransformation extends FormTransformation {
 	{ 
 		Requirements::css(FOUNDATIONFORMS_DIR . '/css/foundationforms.css');
 		
-		// tabset
-		if ($field instanceof TabSet) {
-			$field->Tabs()->transform(new FoundationFormTransformation());
-		}
-			
 		// tab
 		if ($field instanceof Tab) {
 			$field->Fields()->transform(new FoundationFormTransformation());
+		}
+
+		// tabset
+		if ($field instanceof TabSet) {
+			$field->Tabs()->transform(new FoundationFormTransformation());
 		}
 		
 		// fieldgroup
@@ -30,19 +30,19 @@ class FoundationFormTransformation extends FormTransformation {
 			$field->FieldList()->transform(new FoundationFormTransformation());
 		}
 		
-		$template = "Foundation{$field->class}_holder";
+		$holder = "Foundation{$field->class}_holder";
 			
-		if (SSViewer::hasTemplate($template)) {
-			$field->setFieldHolderTemplate($template);
+		if (SSViewer::hasTemplate($holder)) {
+			$field->setFieldHolderTemplate($holder);
 		}
 		else {
 			$field->setFieldHolderTemplate("FoundationFieldHolder");
 		}
 		
-		$templateSmall = "Foundation{$field->class}_holder_small";
+		$holder_small = "Foundation{$field->class}_holder_small";
 			
-		if (SSViewer::hasTemplate($templateSmall)) {
-			$field->setSmallFieldHolderTemplate($templateSmall);
+		if (SSViewer::hasTemplate($holder_small)) {
+			$field->setSmallFieldHolderTemplate($holder_small);
 		}
 		else {
 			$field->setSmallFieldHolderTemplate("FoundationFieldHolderMinimal");
