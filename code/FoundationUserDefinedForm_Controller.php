@@ -1,8 +1,8 @@
 <?php
 /**
  * Performs the FoundationFormTransformation on UserDefinedForm
- * @author Ryan Wachtl <ryan.wachtl.us>
- * @package foundation_forms
+ * @author Ryan Wachtl
+ * @package foundationforms
  */
 class FoundationUserDefinedForm_Controller extends DataExtension {
 

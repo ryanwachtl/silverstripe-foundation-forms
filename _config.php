@@ -6,7 +6,7 @@
 
 $dir = basename(dirname(__FILE__));
 
-define('FOUNDATION_FORM_DIR', $dir);
+define('FOUNDATIONFORMS_DIR', $dir);
 
 // TODO Opt-in Use
 Object::useCustomClass('MemberLoginForm', 'FoundationMemberLoginForm');

@@ -1,14 +1,14 @@
 <?php
 /**
  * Transformation that sets custom templates compatible with the Zurb Foundation framework.
- * @author Ryan Wachtl <ryan@wachtl.us>
- * @package foundation_forms
+ * @author Ryan Wachtl
+ * @package foundationforms
  */
 class FoundationFormTransformation extends FormTransformation {
 	
 	public function transform(FormField $field)
 	{ 
-		Requirements::css(FOUNDATION_FORM_DIR . '/css/foundationforms.css');
+		Requirements::css(FOUNDATIONFORMS_DIR . '/css/foundationforms.css');
 		
 		// tabset
 		if ($field instanceof TabSet) {

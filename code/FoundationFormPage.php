@@ -5,7 +5,7 @@
  * Displays a Form with various Fields to see its Foundation appearance
  *
  * @author Martijn van Nieuwenhoven <info@axyrmedia.nl>
- * @package foundation_forms
+ * @package foundationforms
  */
 
 class FoundationFormPage extends Page {

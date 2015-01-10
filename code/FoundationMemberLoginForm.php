@@ -6,8 +6,8 @@
  * objects and their subclasses to support special features
  * of the framework.
  *
- * @author Ryan Wachtl <ryan@wachtl.us>
- * @package foundation_forms
+ * @author Ryan Wachtl
+ * @package foundationforms
  */
 class FoundationMemberLoginForm extends MemberLoginForm {
 	

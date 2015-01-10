@@ -14,7 +14,7 @@
  * </code>
  *
  * @author Martijn van Nieuwenhoven <info@axyrmedia.nl>
- * @package foundation_forms
+ * @package foundationforms
  */
 class FoundationSwitchField extends OptionsetField {
 	

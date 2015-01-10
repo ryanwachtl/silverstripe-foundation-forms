@@ -2,7 +2,7 @@
 /**
  * Performs the FoundationFormTransformation on CommentingController
  * @author Anselm Christophersen <ac@anselm.dk>
- * @package foundation_forms
+ * @package foundationforms
  */
 class FoundationCommentingController extends DataExtension {
 

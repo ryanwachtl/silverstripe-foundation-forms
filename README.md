@@ -1,30 +1,19 @@
-silverstripe-zurb-foundation-forms
-==================================
+# SilverStripe Foundation Forms Module
 
-SilverStripe 3 Forms Compatible with Zurb Foundation Framework
+Provides enhanced support for using ZURB Foundation [Forms](http://foundation.zurb.com/docs/components/forms.html), [Switches](http://foundation.zurb.com/docs/components/switch.html), [Range Sliders](http://foundation.zurb.com/docs/components/range_slider.html), and [Abide Validation](http://foundation.zurb.com/docs/components/abide.html) within a SilverStripe 3.1.x project.
 
-**CAUTION UNSTABLE API UNDER ACTIVE DEVELOPMENT**
+## Requirements
 
-Installing
-=================================
+### ZURB Foundation Framework
 
-clone into your SilverStripe `root` directory
+- [See suggested minimal custom build](docs/en/_images/foundation-custom-build.png)
 
-`git clone https://github.com/ryanwachtl/silverstripe-foundation-forms.git foundationforms`
+### [SilverStripe Foundation Theme](https://github.com/rywa/silverstripe-foundation-theme)
 
-Installing
-=================================
+- Download Theme: [Latest Release on Github](https://github.com/rywa/silverstripe-foundation-theme/releases/latest)
+- Composer: `composer require [rywa/silverstripe-foundation](https://packagist.org/packages/rywa/silverstripe-foundation-forms) 1.0.x`
 
-`composer require rywa/silverstripe-foundation-forms dev-master`
-
-Requirements
-=================================
-
-SilverStripe Zurb Foundation Theme 
-
-https://github.com/ryanwachtl/silverstripe-foundation
-
-About Foundation
+About ZURB Foundation for Sites
 =================================
 
 Foundation is the most advanced responsive front-end framework in the world. With Foundation you can quickly prototype and build sites or apps that work on any kind of device, with tons of included layout constructs (like a full responsive grid), elements and best practices.
@@ -32,12 +21,3 @@ Foundation is the most advanced responsive front-end framework in the world. Wit
 - [Homepage](http://foundation.zurb.com)
 - [Documentation](http://foundation.zurb.com/docs)
 - [Download](http://foundation.zurb.com/download.php)
-
-MIT Open Source License
-=================================
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
