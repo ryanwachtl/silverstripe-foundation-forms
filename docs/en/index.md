@@ -12,7 +12,7 @@
 
 After installing via either method, please flush your template caches `?flush=all`.
 
-You can now set the theme via the Settings or within a Yaml config file.
+You can now set the theme via the Settings tab in the CMS or within a Yaml config file.
 
 ```
 SSViewer:

@@ -13,4 +13,4 @@ Provides enhanced support for using ZURB Foundation [Forms](http://foundation.zu
 ### [SilverStripe Foundation Theme](https://github.com/rywa/silverstripe-foundation-theme)
 
 - Download Theme: [Latest Release on Github](https://github.com/rywa/silverstripe-foundation-theme/releases/latest)
-- Composer: `composer require [rywa/silverstripe-foundation](https://packagist.org/packages/rywa/silverstripe-foundation-forms) 1.0.x`
+- Composer: `composer require rywa/silverstripe-foundation 1.0.x`
