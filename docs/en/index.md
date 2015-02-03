@@ -6,16 +6,8 @@
 
 ## Manual Installation
 
-[Download the latest release](https://github.com/rywa/silverstripe-foundation-forms/releases/latest), unzip, and place in your `themes` folder.
+[Download the latest release](https://github.com/rywa/silverstripe-foundation-forms/releases/latest), unzip, and place at the same level as the `framework` directory.
 
 ---
 
-After installing via either method, please flush your template caches `?flush=all`.
-
-You can now set the theme via the Settings tab in the CMS or within a Yaml config file.
-
-```
-SSViewer:
-  theme: 'foundation'
-```
-/mysite/config/config.yml
+After installing via either method, please flush your template caches `?flush=1`.
