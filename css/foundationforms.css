@@ -3,7 +3,7 @@ input.holder-required {
 	margin-bottom: 0;
 }
 
-/*.field.holder-bad input,
+.field.holder-bad input,
 .field.holder-bad textarea,
 .field.holder-bad input:focus,
 .field.holder-bad textarea:focus { 
@@ -42,4 +42,3 @@ input.holder-required {
 .holder-required .input {
 
 }
-*/
