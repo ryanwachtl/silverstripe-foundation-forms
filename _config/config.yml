@@ -7,7 +7,7 @@ After:
 ---
 Injector:
   MemberLoginForm:
-    class: BootstrapMemberLoginForm
+    class: FoundationMemberLoginForm
 ---
 Only:
   moduleexists: userforms
