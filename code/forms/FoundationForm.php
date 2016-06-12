@@ -25,7 +25,6 @@ class FoundationForm extends Form {
 	public function forTemplate()
 	{
 		$this->transform(new FoundationFormTransformation());
-		$this->addExtraClass('custom');
 
 		return parent::forTemplate();
 	}
