@@ -12,4 +12,4 @@ You are either using [SilverStripe Foundation Theme](https://github.com/rywa/sil
 
 ## SilverStripe UserForms
 
-If you're using the UserForms module, please use version [2.0.10](https://github.com/silverstripe/silverstripe-userforms/tree/2.0.10)
+If you're using the UserForms module, please use the [1.0 branch](https://github.com/ryanwachtl/silverstripe-foundation-forms/tree/1.0) of SilverStripe Fondation Forms and version [2.0.10](https://github.com/silverstripe/silverstripe-userforms/tree/2.0.10) of the UserForms module.

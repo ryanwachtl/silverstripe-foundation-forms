@@ -1,7 +1,7 @@
 {
 	"name": "rywa/silverstripe-foundation-forms",
 	"type": "silverstripe-module",
-	"description": "Add Foundation framework forms compatibility to SilverStripe 3",
+	"description": "Add ZURB Foundation framework forms compatibility to SilverStripe 3",
 	"keywords": ["silverstripe", "forms", "zurb foundation", "foundation"],
 	"license": "MIT Open Source License",
 	"authors": [
@@ -12,7 +12,7 @@
 			"role": "Developer"
 		}
 	],
-	"require": 
+	"require":
 	{
 		"composer/installers": "*",
 		"silverstripe/framework": "~3.1"
@@ -20,7 +20,7 @@
 	"extra": {
 		"installer-name": "foundationforms",
 		"branch-alias": {
-			"dev-master": "1.0.x-dev"
+			"dev-master": "1.1.x-dev"
 		}
 	},
 	"support": {
