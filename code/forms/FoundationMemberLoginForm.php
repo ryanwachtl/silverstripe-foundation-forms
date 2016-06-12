@@ -9,13 +9,13 @@
  * @author Ryan Wachtl
  * @package foundationforms
  */
-class FoundationForm extends Form {
-	
+class FoundationMemberLoginForm extends MemberLoginForm {
+
 	/**
 	 * @var string The template that will render this form
 	 */
 	protected $template = "FoundationForm";
-	
+
 	/**
 	 * Includes the dependency if necessary, applies the Bootstrap templates,
 	 * and renders the form HTML output
@@ -25,9 +25,8 @@ class FoundationForm extends Form {
 	public function forTemplate()
 	{
 		$this->transform(new FoundationFormTransformation());
-		$this->addExtraClass('custom');
-		
+
 		return parent::forTemplate();
 	}
-	
+
 }

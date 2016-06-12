@@ -1,0 +1,24 @@
+---
+Name: foundationforms
+After:
+  - 'framework/*'
+  - 'cms/*'
+  - 'userforms/*'
+---
+Injector:
+  MemberLoginForm:
+    class: BootstrapMemberLoginForm
+---
+Only:
+  moduleexists: userforms
+---
+UserForm:
+  extensions:
+    - FoundationUserFormExtension
+---
+Only:
+  moduleexists: comments
+---
+CommentingController:
+  extensions:
+    - FoundationCommentingController

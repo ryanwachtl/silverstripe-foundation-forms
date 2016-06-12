@@ -9,10 +9,9 @@ class FoundationCommentingController extends DataExtension {
 	public function alterCommentForm(Form $form) {
 		$form->transform(new FoundationFormTransformation());
 		$form->setTemplate('FoundationCommentingControllerForm', 'FoundationForm', 'Form');
-		$form->addExtraClass('custom');
-		if($form->hasExtension('FormSpamProtectionExtension')) {
-                        $form->enableSpamProtection();
-                }
+		if ($form->hasExtension('FormSpamProtectionExtension')) {
+			$form->enableSpamProtection();
+		}
 	}
 
 }
