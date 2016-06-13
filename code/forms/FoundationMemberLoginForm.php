@@ -11,22 +11,15 @@
  */
 class FoundationMemberLoginForm extends MemberLoginForm {
 
-	/**
-	 * @var string The template that will render this form
-	 */
-	protected $template = "FoundationForm";
-
-	/**
-	 * Includes the dependency if necessary, applies the Bootstrap templates,
-	 * and renders the form HTML output
-	 *
-	 * @return string
-	 */
-	public function forTemplate()
-	{
-		$this->transform(new FoundationFormTransformation());
-
-		return parent::forTemplate();
+	public function __construct($controller = null, $name = null, $fields = null, $actions = null, $checkCurrentUser = true) {
+		if (!$controller) $controller = Controller::curr();
+		if (!$name) $name = "LoginForm";
+		parent::__construct($controller, $name, $fields, $actions, $checkCurrentUser);
+		$this->Fields()->bootstrapify();
+		$this->Actions()->bootstrapify();
+		$this->setTemplate("FoundationForm");
+		$this->invokeWithExtensions('updateFoundationMemberLoginForm', $this);
+		Requirements::css(FOUNDATIONFORMS_DIR . '/css/foundationforms.css');
 	}
 
 }

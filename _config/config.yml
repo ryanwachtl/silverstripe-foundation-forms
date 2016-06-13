@@ -5,6 +5,9 @@ After:
   - 'cms/*'
   - 'userforms/*'
 ---
+FieldList:
+  extensions:
+    - FoundationFieldListExtension
 Injector:
   MemberLoginForm:
     class: FoundationMemberLoginForm

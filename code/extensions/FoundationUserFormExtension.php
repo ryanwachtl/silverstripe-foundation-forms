@@ -8,8 +8,10 @@ class FoundationUserFormExtension extends DataExtension {
 
 	public function updateForm()
 	{
-		$this->owner->transform(new FoundationFormTransformation());
-		$this->owner->setTemplate('FoundationUserForm', 'FoundationForm', 'Form');
+		$this->owner->Fields()->bootstrapify();
+		$this->owner->Actions()->bootstrapify();
+		$this->owner->setTemplate('FoundationUserForm', 'FoundationForm');
+		Requirements::css(FOUNDATIONFORMS_DIR . '/css/foundationforms.css');
 	}
 
 }

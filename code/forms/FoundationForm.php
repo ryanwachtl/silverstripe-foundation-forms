@@ -24,7 +24,9 @@ class FoundationForm extends Form {
 	 */
 	public function forTemplate()
 	{
-		$this->transform(new FoundationFormTransformation());
+		$this->Fields()->bootstrapify();
+		$this->Actions()->bootstrapify();
+		Requirements::css(FOUNDATIONFORMS_DIR . '/css/foundationforms.css');
 
 		return parent::forTemplate();
 	}
